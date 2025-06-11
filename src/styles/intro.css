@@ -1,0 +1,101 @@
+.intro-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  background-color: var(--negro);
+  gap: 50px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro-text h3 {
+  font-size: 1.5rem;
+  color: var(--oro);
+  margin-bottom: 10px;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: var(--amarillo);
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: var(--crema);
+  line-height: 1.6;
+}
+
+
+
+.fused-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply; 
+  opacity: 0.90;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  background-color: var(--negro);
+}
+
+.fused-image:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+
+.intro-section img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.intro-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #e3a765,
+    #fdd000,
+    #f2efe2,
+    #5d6d7c,
+    #000000
+  );
+  background-size: 300% 100%;
+  animation: gradientMove 6s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-educacion {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: var(--amarillo);
+  color: var(--negro);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-educacion:hover {
+  background-color: var(--oro);
+  transform: translateY(-2px);
+}

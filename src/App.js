@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Intro from "./components/Intro.jsx";
+import Skills from "./components/Skills.jsx";
+import SoftSkills from "./components/SoftSkills.jsx";
+import Projects from "./components/Projects.jsx";
+import Educacion from "./components/Educacion.jsx";
 
 function App() {
+  const [mostrarEducacion, setMostrarEducacion] = useState(false);
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Sección Intro con botón que activa Educacion */}
+      <Intro onMostrarEducacion={() => setMostrarEducacion(true)} />
+
+      {/* Panel lateral de Educación, solo si está activo */}
+      {mostrarEducacion && (
+        <Educacion onCerrar={() => setMostrarEducacion(false)} />
+      )}
+
+      {/* Resto de secciones del portafolio */}
+      <Projects />
+      <Skills />
+      <SoftSkills />
     </div>
   );
 }

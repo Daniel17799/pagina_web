@@ -1,0 +1,163 @@
+h2{
+  display: flex;
+  justify-content: center;
+  color: var(--amarillo); 
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.project-card {
+  padding: 10px;
+  margin: 20px;
+  background: var(--crema);
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 550px;
+  height: auto;
+}
+
+.projects-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.carousel {
+  position: relative;
+  height: 280px;
+  width: auto;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-buttons button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.project-info h3{
+color: var(--gris);
+}
+
+.project-info p{
+color: var(--gris);
+}
+
+.clickable-img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.clickable-img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+/* Modal overlay que cubre toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Contenedor principal del contenido del modal */
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen dentro del modal con tamaño consistente */
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Botón de cerrar (X) */
+.modal-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: white;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones de navegación del modal */
+.modal-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  transform: translateY(-50%);
+}
+
+.modal-buttons button {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.3em 0.6em;
+  transition: background 0.2s ease;
+}
+
+.modal-buttons button:hover {
+  background: white;
+}
+

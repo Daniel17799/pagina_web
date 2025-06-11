@@ -1,0 +1,112 @@
+.educacion-section {
+  background-color: var(--negro);
+  color: var(--crema);
+  padding: 100px 10%;
+}
+
+.educacion-title {
+  color: var(--amarillo);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.habilidades {
+color:var(--oro);
+letter-spacing: 1.2px;
+}
+
+.aplicaciones {
+color: var(--oro);
+letter-spacing: 1.2px;
+
+}
+
+.educacion-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.educacion-card {
+  background-color: --gris;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.educacion-card h3 {
+  color: var(--oro);
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.estado {
+  font-style: italic;
+  color: var(--crema);
+  margin-bottom: 15px;
+}
+
+.educacion-card ul {
+  padding-left: 20px;
+  margin: 5px 0 15px;
+  list-style: disc;
+  color: var(--crema);
+  font-size: 1.2rem;
+}
+
+.tecnologias {
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--amarillo);
+  font-size: 1.3rem;
+}
+
+.certificados-list {
+  margin-top: 40px;
+  padding-left: 20px;
+  list-style: square;
+  color: var(--crema);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.btn-cerrar {
+  position: fixed;
+  top: 20px;
+  background-color: var(--amarillo);
+  color: var(--negro);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cerrar:hover {
+  background-color: var(--oro);
+  transform: scale(1.1);
+  animation: pop 2s ease infinite; /* se repite cada 2 segundos */
+
+}
+
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-cerrar {
+  animation: pop 2s ease infinite; /* se repite cada 2 segundos */
+}
