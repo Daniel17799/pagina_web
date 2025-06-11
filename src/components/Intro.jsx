@@ -67,7 +67,7 @@ const Intro = ({onMostrarEducacion}) => {
         </button>
       </div>
       <div className="imagen-container" ref={imgRef}>
-        <img src="/Projects/Profile2.PNG" alt="Perfil" className="fused-image" />
+        <img src="/Projects/Profile2.png" alt="Perfil" className="fused-image" />
       </div>
     </section>
   );

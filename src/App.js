@@ -11,15 +11,15 @@ function App() {
   return (
     
     <div className="App">
-      {/* Sección Intro con botón que activa Educacion */}
+
       <Intro onMostrarEducacion={() => setMostrarEducacion(true)} />
 
-      {/* Panel lateral de Educación, solo si está activo */}
+    
       {mostrarEducacion && (
         <Educacion onCerrar={() => setMostrarEducacion(false)} />
       )}
 
-      {/* Resto de secciones del portafolio */}
+    
       <Projects />
       <Skills />
       <SoftSkills />
